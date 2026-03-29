@@ -84,7 +84,7 @@ public class EspSensorsService implements MqttCallbackExtended {
 
       final Timestamp timestamp;
       if (eventDto.timestamp() != null && eventDto.timestamp() > 0) {
-        timestamp = new Timestamp(eventDto.timestamp());
+        timestamp = new Timestamp(eventDto.timestamp() * 1000);
         logger.debug("Timestamp: {}.", timestamp);
       } else {
         timestamp = new Timestamp(System.currentTimeMillis());
