@@ -29,6 +29,9 @@ public class Event {
   @Column(name = "humidity")
   private Double humidity;
 
+  @Column(name = "battery")
+  private Double battery;
+
   public Long getId() {
     return id;
   }
@@ -69,6 +72,14 @@ public class Event {
     this.humidity = humidity;
   }
 
+  public Double getBattery() {
+    return battery;
+  }
+
+  public void setBattery(Double battery) {
+    this.battery = battery;
+  }
+
   @Override
   public String toString() {
     return "Event{" +
@@ -77,6 +88,7 @@ public class Event {
       ", timestamp=" + timestamp +
       ", temperature=" + temperature +
       ", humidity=" + humidity +
+      ", battery=" + battery +
       '}';
   }
 }

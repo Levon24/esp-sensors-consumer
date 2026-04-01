@@ -9,6 +9,7 @@ package org.levon24.esp_sensors.services.mqtt.dto;
 public record EventDto(
   Long timestamp,
   Double temperature,
-  Double humidity) {
+  Double humidity,
+  Double battery) {
 
 }

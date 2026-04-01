@@ -96,6 +96,7 @@ public class EspSensorsService implements MqttCallbackExtended {
 
       event.setTemperature(eventDto.temperature());
       event.setHumidity(eventDto.humidity());
+      event.setBattery(eventDto.battery());
 
       final Event s = eventService.save(event);
       logger.info("Saved event: {}.", s);

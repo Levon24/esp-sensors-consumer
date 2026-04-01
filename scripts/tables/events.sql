@@ -6,3 +6,5 @@ CREATE TABLE events (
   humidity DOUBLE,
   PRIMARY KEY (id)
 );
+
+ALTER TABLE events ADD COLUMN battery DOUBLE;
