@@ -25,7 +25,8 @@ import java.util.Map;
 public class EspSensorsService implements MqttCallbackExtended {
   private static final Logger logger = LoggerFactory.getLogger(EspSensorsService.class);
   private static final Map<String, String> sensors = Map.of(
-    "sensors/kitchen", "kitchen"
+    "sensors/kitchen", "kitchen",
+    "sensors/cabinet", "cabinet"
   );
   private final ObjectMapper objectMapper;
   private final EventService eventService;
