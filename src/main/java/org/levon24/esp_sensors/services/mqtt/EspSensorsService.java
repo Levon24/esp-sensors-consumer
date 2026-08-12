@@ -27,7 +27,8 @@ public class EspSensorsService implements MqttCallbackExtended {
   private static final Map<String, String> sensors = Map.of(
     "sensors/kitchen", "kitchen",
     "sensors/cabinet", "cabinet",
-    "sensors/hall", "hall"
+    "sensors/hall", "hall",
+    "sensors/nursery", "nursery"
   );
   private final ObjectMapper objectMapper;
   private final EventService eventService;
